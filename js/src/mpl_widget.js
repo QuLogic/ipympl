@@ -34,7 +34,7 @@ export class MPLCanvasModel extends widgets.DOMWidgetModel {
         };
     }
 
-    initialize(attributes, options) {
+    initialize(attributes, options, extra) {
         super.initialize(attributes, options);
 
         this.offscreen_canvas = document.createElement('canvas');

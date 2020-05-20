@@ -279,8 +279,8 @@ def new_figure_manager(num, *args, **kwargs):
     """
     Create a new figure manager instance
     """
-    figure_class = kwargs.pop('FigureClass', Figure)
-    this_fig = figure_class(*args, **kwargs)
+    figureClass = kwargs.pop('FigureClass', Figure)
+    this_fig = figureClass(*args, **kwargs)
     return new_figure_manager_given_figure(num, this_fig)
 
 
